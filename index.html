@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PACMAN</title>
+    <title>8Ball</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-    <body>
-      <img id="pacman" src="img/pacman.png"/> 
-    </body>
+    <body bgcolor="gray">
+      <div style="text-align:center">
+        <h1>Magic 8-Ball</h1>
+        <br> Enter a question below, then click on the Magic 8-Ball to recieve its wisdom.
+        <br>
+        <input id = "ask" type="text" placeholder="Ask a question" size=100  width="100" height="30" ;>
+        <br>
+        <br>
+        <img type="image" src="img/8ball.png" width="400" alt="magicBall" id="magicBallButton" onclick="GenerateAnswer()" ;>
+      </div>
+      <div id="answer"> </div>
 <script src="js/main.js"></script>
 
 </body>
